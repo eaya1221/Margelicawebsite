@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Angelica | Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Two themes: baby &amp; nude pink (day) and blue moonlight (night). Only one is active at a time. -->
+    <link rel="stylesheet" href="style-watermelon.css" id="theme-pink">
+    <link rel="stylesheet" href="style-night.css" id="theme-night" media="not all">
+    <script>
+        // Apply the saved theme before the page paints, so it doesn't flash
+        try {
+            if (localStorage.getItem("theme") === "night") {
+                document.getElementById("theme-pink").media = "not all";
+                document.getElementById("theme-night").media = "all";
+            }
+        } catch (error) { }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#" data-tab="home">Ms. Maria Angelica A. Gutierrez</a>
+
+        <div class="header-actions">
+            <nav aria-label="Main navigation">
+                <button class="nav-link active" type="button" data-tab="home">Home</button>
+                <button class="nav-link" type="button" data-tab="about">About</button>
+                <button class="nav-link" type="button" data-tab="portfolio">Portfolio</button>
+                <button class="nav-link" type="button" data-tab="contact">Contact</button>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" type="button">Night mode</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="tab-panel active">
+            <div class="collage">
+                <img src="pic 1.jpg" alt="Personal photo 1">
+                <img src="pic 2.jpg" alt="Personal photo 2">
+                <img src="pic 3.jpg" alt="Personal photo 3">
+                <img src="pic 4.jpg" alt="Personal photo 4">
+                <img src="pic 5.jpg" alt="Personal photo 5">
+                <img src="pic 6.jpg" alt="Personal photo 6">
+            </div>
+
+            <div class="hero">
+                <div>
+                    <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+                    <h1>Hello, I'm <span>Ms. Maria Angelica A. Gutierrez</span></h1>
+                    <h3>Welcome to My Personal Portfolio</h3>
+                    <p>Aspiring IT | Creative Learner</p>
+                    <button class="btn" type="button" data-tab="about">Explore More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="tab-panel">
+            <div class="page-content wide">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About Me</h2>
+
+                <div class="about-grid">
+                    <aside class="about-profile">
+                        <div class="portrait"><img src="pic 6.jpg" alt="EAIA GUTIERREZ">
+                        </div>
+                        <h3 class="profile-name"><Maria Angelica Atienza Gutierrez></h3>
+                        <p class="profile-role">BSIT STUDENT 1st year
+                        <p class="profile-bio">I am a creative and dedicated student with a passion for technology and innovation.</p>
+                    </aside>
+
+                    <div class="about-main">
+                        <h3 class="block-title">My Journey</h3>
+                        <ol class="timeline">
+                            <li class="timeline-item">
+                                <span class="timeline-year">1st year<
+                                <h4>Bachelor Of Science in INFORMATION TECHNOLOGY</h4>
+                                <p class="meta">MINDORO STATE UNIVERYSITY</p>
+                                <p>1st Year BSIT</p>
+                            </li>
+                            <li class="timeline-item">
+                                <span class="timeline-year">Senior High Graduate S.Y. 2025-2026
+-CHURCH MINISTRY AWARD
+-CULTURAL AND THEATER ARTS AWARD 
+-CHAMPION of GG (Games of The General)
+</span>
+                                <h4></h4>
+                                <p class="meta"> Puerto Galera National High School Main Campus</p>
+                                <p>When the time is right, I, the Lord will make it happen"</p>
+                            </li>
+                            <li class="timeline-item"> GARDE 10
+                                <span class="timeline-year">Junior HighSchool Graduate S.Y. 2022-2023
+Puerto Galera Academy
+</span>
+                                <h4>GRADUATED IN CATHOLIC SCHOOL</h4>
+                                <p class="meta">Puerto Galera Academy</p>
+                            </li>
+                        </ol>
+
+                        <h3 class="block-title">What I Love</h3>
+                        <ul class="chips">
+                            <li><Basic Coding </li>
+                            <li>HTML AND CSS</li>
+                            <li>USING A COMPUTERS </li>
+                            <li>Learning new things about technology/li>
+                            <li>Dancing and Listening to Music</li>
+                            <li>Exploring New Apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="tab-panel">
+            <div class="page-content wide">
+                <p class="eyebrow">WHAT I CAN DO</p>
+                <h2>My Projects</h2>
+                <p class="intro-text">SCHOOLS</p>
+
+                <div class="showcase">
+                    <article class="project">
+                        <div class="project-media"><!-- Add a screenshot: <img src="project-1.jpg" alt="Project 1"> -->
+                        </div>
+                        <div class="project-body">
+                            <ul class="chips small">
+                                <li><!-- Tag, e.g. HTML &amp; CSS --></li>
+                            </ul>
+                            <h3><!-- Project 1 title --></h3>
+                            <p><!-- Project 1 description --></p>
+                            <a class="project-link" href="#" target="_blank"
+                                rel="noopener"><!-- Link text, e.g. View project --></a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-media"><!-- Add a screenshot: <img src="project-2.jpg" alt="Project 2"> -->
+                        </div>
+                        <div class="project-body">
+                            <ul class="chips small">
+                                <li><!-- Tag --></li>
+                            </ul>
+                            <h3><!-- Project 2 title --></h3>
+                            <p><!-- Project 2 description --></p>
+                            <a class="project-link" href="#" target="_blank" rel="noopener"><!-- Link text --></a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-media"><!-- Add a screenshot: <img src="project-3.jpg" alt="Project 3"> -->
+                        </div>
+                        <div class="project-body">
+                            <ul class="chips small">
+                                <li><!-- Tag --></li>
+                            </ul>
+                            <h3><!-- Project 3 title --></h3>
+                            <p><!-- Project 3 description --></p>
+                            <a class="project-link" href="#" target="_blank" rel="noopener"><!-- Link text --></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-panel">
+            <div class="page-content wide">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Contact Me</h2>
+                <p class="intro-text">MY DETAILS!!!</p>
+
+                <div class="contact-panel">
+                    <ul class="contact-strip">
+                        <li>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:">mariaangelicagutz11@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">Facebook</span>
+                            <a href="#" target="_blank" rel="noopener">Eaia Gutierrez</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">Location</span>
+                            <span>STO.NINO PUERTO GALERA OR. MINDORO</span>
+                        </li>
+                    </ul>
+
+                    <form action="#" method="post" class="contact-form">
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="name">Your name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Your email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 My Personal Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const tabButtons = document.querySelectorAll("[data-tab]");
+        const tabPanels = document.querySelectorAll(".tab-panel");
+
+        function openTab(tabName) {
+            tabPanels.forEach(panel => {
+                panel.classList.toggle("active", panel.id === tabName);
+            });
+
+            document.querySelectorAll(".nav-link").forEach(button => {
+                button.classList.toggle("active", button.dataset.tab === tabName);
+            });
+
+            history.replaceState(null, "", "#" + tabName);
+            window.scrollTo({top: 0, behavior: "smooth"});
+        }
+
+        tabButtons.forEach(button => {
+            button.addEventListener("click", () => openTab(button.dataset.tab));
+        });
+
+        const themePink = document.getElementById("theme-pink");
+        const themeNight = document.getElementById("theme-night");
+        const themeButton = document.getElementById("themeToggle");
+
+        function setTheme(name) {
+            const night = name === "night";
+            themePink.media = night ? "not all" : "all";
+            themeNight.media = night ? "all" : "not all";
+            themeButton.textContent = night ? "Day mode" : "Night mode";
+            try {localStorage.setItem("theme", name);} catch (error) { }
+        }
+
+        themeButton.addEventListener("click", () => {
+            setTheme(themeNight.media === "all" ? "pink" : "night");
+        });
+
+        // Match the button label to the theme chosen in <head>
+        themeButton.textContent = themeNight.media === "all" ? "Day mode" : "Night mode";
+
+        // The form doesn't send anywhere yet. Connect it to an email/form service later.
+        document.querySelector(".contact-form").addEventListener("submit", event => {
+            event.preventDefault();
+        });
+
+        const initialTab = window.location.hash.replace("#", "");
+        const validTabs = ["home", "about", "portfolio", "contact"];
+        openTab(validTabs.includes(initialTab) ? initialTab : "home");
+    </script>
+</body>
+
+</html>
